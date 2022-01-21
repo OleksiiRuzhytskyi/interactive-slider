@@ -10,21 +10,28 @@
 	position: absolute;
 }
 .peach-imgNew {
-    position: absolute;
+  position: absolute;
 	top: 0px;
 	left: 35px;
 	width: 60px;
     z-index: 1;
 }
 .peach {
-    position: absolute;
-    width: 105px;
-    left: 199px;
-    top: 295px;
+	position: absolute;
+	width: 105px;
+	left: 199px;
+	top: 295px;
+}
+.petal-4 {
+  clip-path: inset( 0 0 0 25px)
+}
+.lemon {
+  clip-path: inset( 0 0 0 15px);
 }
 .orange {
-    position: absolute;
-    width: 165px;
-    left: -10px;
-    top: 450px;
+	position: absolute;
+	width: 165px;
+	left: -10px;
+	top: 450px;
+	clip-path: inset( 0 0 0 10px);
 }
