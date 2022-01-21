@@ -11,4 +11,7 @@
   .pepper-container {
 		height: 620px;
   }
+	.lemon {
+		clip-path: inset( 0 0 25px 10px);
+	}
 }
