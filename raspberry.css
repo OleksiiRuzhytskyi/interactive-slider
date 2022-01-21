@@ -1,0 +1,79 @@
+
+.all-fruit-raspberry {
+    position: absolute;
+}
+.raspberry-1 {
+    position: absolute;
+    width: 90px;
+    top: 235px;
+    left: -20px;
+}
+.petal-5 {
+    position: absolute;
+    width: 80px;
+    top: 280px;
+    left: 310px;
+    /* z-index: 1; */
+}
+.raspberry-2 {
+    position: absolute;
+	top: 310px;
+	left: 186px;
+	width: 90px;
+}
+.raspberry-3 {
+    position: absolute;
+	top: 352px;
+	left: 210px;
+	width: 110px;
+}
+.petal-4 {
+    position: absolute;
+	top: 330px;
+	left: -25px;
+	width: 60px;
+}
+.petal-2 {
+    position: absolute;
+	top: 332px;
+	left: 56px;
+	width: 65px;   
+}
+.petal-3 {
+    position: absolute;
+	top: 447px;
+	left: 235px;
+	width: 60px;  
+}
+.lemon {
+    position: absolute;
+	top: 450px;
+	left: -11px;
+	width: 180px;
+}
+.raspberry-taglineback {
+    width: 340px;
+	height: 270px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.raspberryNewImg {
+    position: absolute;
+	top: 0px;
+	left: 35px;
+	width: 60px;
+    z-index: 1;
+}
+.raspberry-container {
+    opacity: 0;
+}
+.opacity-1 {
+    opacity: 1;
+}
+.opacity-0 {
+    opacity: 0;
+}
+.bg-raspberry {
+    background-image: url('./images/raspberry\ -\ BG.jpg')
+}

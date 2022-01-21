@@ -1,0 +1,234 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+	body {
+	margin: 0;
+	padding: 0;
+}
+.pepper-container {
+	background-image: url('./images/peppermint-\ BG.jpg');
+	width: 375px;
+	height: 667px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+} 
+.bg-peppermint {
+	background-image: url('./images/peppermint-\ BG.jpg');
+}
+.tagline-container {
+	top: 0;
+	left: 0;
+	position: relative;
+}
+.tagline-container__newImg {
+	position: absolute;
+	top: -40px;
+	left: 35px;
+	width: 60px;
+	animation-name: img-new;
+	animation-duration: 1s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	z-index: 1;
+}
+
+@keyframes img-new {
+	0% {
+		top: -40px; 
+	}
+	100% {
+		top: 0;
+	}
+}
+
+.pepper-tagline-img {
+	position: absolute;
+	width: 250px;
+	top: 110px;
+	left: 40px;
+	animation-name: tagline;
+	animation-duration: 0.5s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	transform: scale(0);
+}
+@keyframes tagline {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1)
+	}
+}
+.peppermint-taglineback {
+	width: 340px;
+	height: 260px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.strawberry-1 {
+	position: absolute;
+	width: 120px;
+	top: 290px;
+	left: -40px;
+}
+.strawberry-2 {
+	position: absolute;
+	top: 324px;
+	right: 42px;
+	width: 120px;
+
+}
+.pepermint-1 {
+	position: absolute;
+	width: 180px;
+	bottom: 60px;
+	left: 12px;
+}
+.pepermint-2 {
+	position: absolute;
+	bottom: -30px;
+	right: -30px;
+	width: 100px;
+}
+.seed-1 {
+	position: absolute;
+	width: 20px;
+	top: 530px;
+	right: 90px;
+}
+.seed-2 {
+	position: absolute;
+	right: -12px;
+	top: 420px;
+	width: 25px;
+}
+.shop-container {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 380px;
+	z-index: 1;
+}
+.shop-img {
+	width: 100px;
+	cursor: pointer;	
+}
+
+.container__slider {
+	/* background-color: blue; */
+	padding: 0;
+	top: 345px;
+	left: 80px;
+	width: 190px;
+	height: 200px;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.arrow-left {
+	position: absolute;
+	width: 20px;
+	top: 430px;
+	left: 20px;
+	cursor: pointer;
+	z-index: 1;
+}
+.arrow-right {
+	position: absolute;
+	width: 20px;
+	top: 429px;
+	right: 40px;
+	cursor: pointer;
+}
+
+.container__slider__line {
+	display:flex;
+	align-items: center;
+	width: 600px;
+	position: relative;
+	right: 0;
+}
+.img-slaider {
+	width: 200px;
+	height: 200px;
+	padding: 0;
+	margin: 0;
+}
+.anime-scale {
+	animation-name: ftuitScale;
+	animation-duration: 1s;
+}
+@keyframes ftuitScale {
+	0% {
+		transform: scale(0)
+	}
+	100% {
+		transform: scale(1)
+	}
+}
+
+.anime-slaider {
+	animation-name: slaider;
+	animation-duration: 1.3s;
+}
+@keyframes slaider {
+	0% {
+		transform: translateX(200px)
+	}
+}
+
+.anime-header {
+	animation-name: header;
+	animation-duration: 1s;
+}
+@keyframes header {
+	0% {
+		transform: translateY(-400px)
+	}
+}
+
+.last-anime {
+	animation-name: lastEl;
+	animation-duration: 1.5s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	transform: scale(0);
+}
+@keyframes lastEl {
+	0% {
+		transform: scale(0)
+	}
+	100% {
+		transform: scale(1)
+	}
+}
+
+.anime-show-button {
+	animation-name: showBtn;
+	animation-duration: 1s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+@keyframes showBtn {
+	0% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+
+.toggle {
+	transition: right 1s;
+}
+

@@ -1,0 +1,30 @@
+.bg-peach {
+    background-image: url('./images/peach\ -\ BG.jpg');
+}
+.all-fruit-peach {
+    position: absolute;
+}
+.peach-tagline {
+    width: 340px;
+	height: 270px;
+	position: absolute;
+}
+.peach-imgNew {
+    position: absolute;
+	top: 0px;
+	left: 35px;
+	width: 60px;
+    z-index: 1;
+}
+.peach {
+    position: absolute;
+    width: 105px;
+    left: 199px;
+    top: 295px;
+}
+.orange {
+    position: absolute;
+    width: 165px;
+    left: -10px;
+    top: 450px;
+}
