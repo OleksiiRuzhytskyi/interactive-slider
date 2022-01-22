@@ -72,13 +72,11 @@ function changeElement() {
 			allFruitPep[i].classList.remove('opacity-0')
 			console.log('t: ', i);
 		}
-		document.querySelector('.container').classList.add('bg-peppermint')
-		document.querySelector('.container').classList.remove('bg-raspberry')
+		// document.querySelector('.container').classList.add('bg-peppermint')
 		document.querySelector('.pep-container').classList.remove('opacity-0')
 		document.querySelector('.raspberry-container').classList.remove('opacity-1')
 		document.querySelector('.peach-container').classList.add('opacity-0')
 	} else if (offsetLeft === 200) {
-		document.querySelector('.peach-container').classList.add('opacity-1')
 		document.querySelector('.pep-container').style.transition = 'all 1s';
 		document.querySelector('.pep-container').classList.add('opacity-0')
 		for (let i = 0; i < allFruitPep.length; i++) {
@@ -88,7 +86,6 @@ function changeElement() {
 		}
 		document.querySelector('.raspberry-container, .raspberry-1 ').classList.add('opacity-1')
 		document.querySelector('.raspberry-container').style.transition = 'all 1s';
-		document.querySelector('.container').classList.add('bg-raspberry')
 		document.querySelector('.peach-container').classList.add('opacity-0')
 		console.log('test; ', document.querySelector('.raspberry-container'));
 
@@ -99,9 +96,8 @@ function changeElement() {
 			console.log('t: ', i);
 		}
 		document.querySelector('.raspberry-container').classList.add('opacity-1')
-		document.querySelector('.container').classList.add('bg-peach')
 		document.querySelector('.peach-container').classList.remove('opacity-0')
-		document.querySelector('.peach-container').classList.add('opacity-1')
+		document.querySelector('.pep-container').classList.add('opacity-0')
 		document.querySelector('.raspberry-container').classList.remove('opacity-1')
 		document.querySelector('.peach-container').style.transition = 'all 1s';
 
