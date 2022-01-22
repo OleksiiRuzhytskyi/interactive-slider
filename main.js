@@ -28,15 +28,6 @@ slider.addEventListener('touchmove', function (e) {
 	if (Math.abs(diffX) > Math.abs(diffY)) {
 		if(diffX > 0) {
 			console.log('right');
-			offsetLeft += 200
-			if (offsetLeft > 400) {
-				offsetLeft = 0
-			}
-			slider.style.right = offsetLeft + 'px'
-			changeElement()
-			console.log('offset: ', offsetLeft);
-		} else {
-			console.log('left');
 			offsetLeft -= 200
 			if (offsetLeft < 0) {
 				offsetLeft = 400
@@ -44,8 +35,17 @@ slider.addEventListener('touchmove', function (e) {
 			slider.style.right = offsetLeft + 'px'
 
 			changeElement()
-			
+
+		
+		} else {
 			console.log('left');
+			offsetLeft += 200
+			if (offsetLeft > 400) {
+				offsetLeft = 0
+			}
+			slider.style.right = offsetLeft + 'px'
+			changeElement()
+			console.log('offset: ', offsetLeft);
 		}
 	}
 	coordX1 = null
