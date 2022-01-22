@@ -6,11 +6,12 @@
 	margin: 0 auto;
 	padding: 0;
 }
-.pepper-container {
+.container {
 	background-image: url('./images/peppermint-\ BG.jpg');
 	width: 375px;
 	height: 667px;
 	padding: 0;
+	margin: 0 auto;
 	position: relative;
 } 
 .container {
@@ -19,12 +20,7 @@
 .bg-peppermint {
 	background-image: url('./images/peppermint-\ BG.jpg');
 }
-.tagline-container {
-	top: 0;
-	left: 0;
-	position: relative;
-}
-.tagline-container__newImg {
+.pepperNewImg {
 	position: absolute;
 	top: -40px;
 	left: 35px;

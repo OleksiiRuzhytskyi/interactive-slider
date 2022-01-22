@@ -1,12 +1,8 @@
 let arrowLeft = document.querySelector('.arrow-left');
 let arrowRight = document.querySelector('.arrow-right');
-
 let slider = document.querySelector('.container__slider__line');
-
-let allFruitPep = document.querySelectorAll('.fruitDel')
-
+let allFruitPep = document.querySelectorAll('.peper-container-fruits');
 let offsetLeft = 0
-
 let coordX1
 let coordY1
 
@@ -21,7 +17,6 @@ slider.addEventListener('touchmove', function (e) {
 	let eTouches = e.touches[0]
 	let coordX2 = eTouches.clientX
 	let coordY2 = eTouches.clientY
-
 	let diffX = coordX2 - coordX1
 	let diffY = coordY2 - coordY1
 
@@ -33,10 +28,7 @@ slider.addEventListener('touchmove', function (e) {
 				offsetLeft = 400
 			}
 			slider.style.right = offsetLeft + 'px'
-
-			changeElement()
-
-		
+			changeElement()		
 		} else {
 			console.log('left');
 			offsetLeft += 200
@@ -48,8 +40,8 @@ slider.addEventListener('touchmove', function (e) {
 			console.log('offset: ', offsetLeft);
 		}
 	}
-	coordX1 = null
-	coordX2 = null
+		coordX1 = null
+		coordX2 = null
 })
 
 arrowRight.addEventListener('click', function() {
@@ -63,13 +55,11 @@ arrowRight.addEventListener('click', function() {
 })
 
 arrowLeft.addEventListener('click', function () {
-	// changeElement()
 	offsetLeft -= 200
 	if (offsetLeft < 0) {
 		offsetLeft = 400
 	}
 	slider.style.right = offsetLeft + 'px'
-
 	changeElement()
 	console.log('left');
 })
@@ -82,8 +72,8 @@ function changeElement() {
 			allFruitPep[i].classList.remove('opacity-0')
 			console.log('t: ', i);
 		}
-		document.querySelector('.pepper-container').classList.add('bg-peppermint')
-		document.querySelector('.pepper-container').classList.remove('bg-raspberry')
+		document.querySelector('.container').classList.add('bg-peppermint')
+		document.querySelector('.container').classList.remove('bg-raspberry')
 		document.querySelector('.pep-container').classList.remove('opacity-0')
 		document.querySelector('.raspberry-container').classList.remove('opacity-1')
 		document.querySelector('.peach-container').classList.add('opacity-0')
@@ -98,7 +88,7 @@ function changeElement() {
 		}
 		document.querySelector('.raspberry-container, .raspberry-1 ').classList.add('opacity-1')
 		document.querySelector('.raspberry-container').style.transition = 'all 1s';
-		document.querySelector('.pepper-container').classList.add('bg-raspberry')
+		document.querySelector('.container').classList.add('bg-raspberry')
 		document.querySelector('.peach-container').classList.add('opacity-0')
 		console.log('test; ', document.querySelector('.raspberry-container'));
 
@@ -109,7 +99,7 @@ function changeElement() {
 			console.log('t: ', i);
 		}
 		document.querySelector('.raspberry-container').classList.add('opacity-1')
-		document.querySelector('.pepper-container').classList.add('bg-peach')
+		document.querySelector('.container').classList.add('bg-peach')
 		document.querySelector('.peach-container').classList.remove('opacity-0')
 		document.querySelector('.peach-container').classList.add('opacity-1')
 		document.querySelector('.raspberry-container').classList.remove('opacity-1')

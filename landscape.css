@@ -4,13 +4,10 @@
 }
 	.container {
 		position: relative;
-		top: -133px;
-		left: 55px;
-		transform: scale(0.57);
-	}
-  .pepper-container {
+		top: -140px;
+		transform: scale(0.56);
 		height: 620px;
-  }
+	}
 	.lemon {
 		clip-path: inset( 0 0 25px 10px);
 	}
