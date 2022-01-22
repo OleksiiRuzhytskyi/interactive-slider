@@ -7,27 +7,72 @@ let allFruitPep = document.querySelectorAll('.fruitDel')
 
 let offsetLeft = 0
 
-arrowRight.addEventListener('click', function() {
-	offsetLeft += 200        
-	if (offsetLeft > 400) {
-		offsetLeft = 0
-	}
-	slider.style.right = offsetLeft + 'px'
-	changeElement()
-	console.log('offset: ', offsetLeft);
+let coordX1
+let coordY1
+
+slider.addEventListener('touchstart', function(e) {
+	let eTouches = e.touches[0]
+	coordX1 = eTouches.clientX
+	coordY1 = eTouches.clientY 
 })
 
-arrowLeft.addEventListener('click', function () {
-	// changeElement()
-	offsetLeft -= 200
-	if (offsetLeft < 0) {
-		offsetLeft = 400
-	}
-	slider.style.right = offsetLeft + 'px'
+slider.addEventListener('touchmove', function (e) {
+	if (!coordX1 || !coordY1) return
+	let eTouches = e.touches[0]
+	let coordX2 = eTouches.clientX
+	let coordY2 = eTouches.clientY
 
-	changeElement()
-	console.log('left');
+	let diffX = coordX2 - coordX1
+	let diffY = coordY2 - coordY1
+
+	if (Math.abs(diffX) > Math.abs(diffY)) {
+		if(diffX > 0) {
+			console.log('right');
+			offsetLeft += 200
+			if (offsetLeft > 400) {
+				offsetLeft = 0
+			}
+			slider.style.right = offsetLeft + 'px'
+			changeElement()
+			console.log('offset: ', offsetLeft);
+		} else {
+			console.log('left');
+			offsetLeft -= 200
+			if (offsetLeft < 0) {
+				offsetLeft = 400
+			}
+			slider.style.right = offsetLeft + 'px'
+
+			changeElement()
+			
+			console.log('left');
+		}
+	}
+	coordX1 = null
+	coordX2 = null
 })
+
+// arrowRight.addEventListener('click', function() {
+// 	offsetLeft += 200        
+// 	if (offsetLeft > 400) {
+// 		offsetLeft = 0
+// 	}
+// 	slider.style.right = offsetLeft + 'px'
+// 	changeElement()
+// 	console.log('offset: ', offsetLeft);
+// })
+
+// arrowLeft.addEventListener('click', function () {
+// 	// changeElement()
+// 	offsetLeft -= 200
+// 	if (offsetLeft < 0) {
+// 		offsetLeft = 400
+// 	}
+// 	slider.style.right = offsetLeft + 'px'
+
+// 	changeElement()
+// 	console.log('left');
+// })
 
 
 function changeElement() {
