@@ -52,27 +52,27 @@ slider.addEventListener('touchmove', function (e) {
 	coordX2 = null
 })
 
-// arrowRight.addEventListener('click', function() {
-// 	offsetLeft += 200        
-// 	if (offsetLeft > 400) {
-// 		offsetLeft = 0
-// 	}
-// 	slider.style.right = offsetLeft + 'px'
-// 	changeElement()
-// 	console.log('offset: ', offsetLeft);
-// })
+arrowRight.addEventListener('click', function() {
+	offsetLeft += 200        
+	if (offsetLeft > 400) {
+		offsetLeft = 0
+	}
+	slider.style.right = offsetLeft + 'px'
+	changeElement()
+	console.log('offset: ', offsetLeft);
+})
 
-// arrowLeft.addEventListener('click', function () {
-// 	// changeElement()
-// 	offsetLeft -= 200
-// 	if (offsetLeft < 0) {
-// 		offsetLeft = 400
-// 	}
-// 	slider.style.right = offsetLeft + 'px'
+arrowLeft.addEventListener('click', function () {
+	// changeElement()
+	offsetLeft -= 200
+	if (offsetLeft < 0) {
+		offsetLeft = 400
+	}
+	slider.style.right = offsetLeft + 'px'
 
-// 	changeElement()
-// 	console.log('left');
-// })
+	changeElement()
+	console.log('left');
+})
 
 
 function changeElement() {
